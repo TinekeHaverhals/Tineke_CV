@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<link rel="STYLESHEET" href="css.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <title>Tineke Haverhals</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <img src="images/tineke.png" alt="foto_tineke">
+
+        <p id="underline">Persoonlijke gegevens</p>
+        <p>Adres: Kastanjelaan 9
+            <br> 2560 Kessel</p>
+        <p>GSM: (+32)484090351</p>
+        <p>Rijbewijs: rijbewijs B</p>
+        <p>Geboortedatum: 15/07/1998</p>
+        <p>Geboorteplaats: Wilrijk</p>
+        <p>Nationaliteit : Belg</p>
+
+        <a href="https://www.facebook.com/tineke.haverhals/" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/tineke-haverhals-6851821aa/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/tineke_haverhals/" class="fa fa-instagram"></a>
+        <br>
+
+        <SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+            var nu = new Date();
+            var uren = nu.getHours();
+            var uren2 = ((uren < 10) ? "0" : "") + uren;
+            var minuten = nu.getMinutes();
+            var minuten2 = ((minuten < 10) ? ":0" : ":") + minuten;
+
+
+            var tijdweergave = uren2 + minuten2
+
+            document.write(tijdweergave);
+        </SCRIPT>
+
+        <SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+            var nu = new Date();
+            var dag = nu.getDate();
+            var dag2 = ((dag < 10) ? "0" : "") + dag;
+            var maand = nu.getMonth() + 1;
+            var maand2 = ((maand < 10) ? "0" : "") + maand;
+            var jaar = nu.getYear();
+            var jaar4 = ((jaar < 1900) ? (jaar + 1900) : (jaar));
+
+            document.write(dag2 + "-" + maand2 + "-" + jaar4);
+        </SCRIPT>
+    </div>
+
+    <div id="style">
+
+        <h1>Tineke Haverhals</h1>
+        <h2>Junior Java developer</h2>
+
+        <h3 onclick="myFunction()">Ambitie</h3>
+
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = " Sinds mijn opleiding multimedia, is mijn passie voor IT gegroeid. Tijdens de opleiding kregen we een basis mee en besloot ik om hier dieper op in te gaan. Een JAVA opleiding was de volgende stap om mijn kennis te verbreden. Nu is het tijd om mijn kennis om te zetten in de praktijk. Ik kijk er naar uit om een leerrijke ervaring op te doen.";
+            }
+        </script>
+
+        <h3><a href="pages/properites.html">Eigenschappen</a></h3>
+        <h3><a href="pages/language.html">Talen</a></h3>
+        <h3><a href="pages/study.html">Opleiding</a></h3>
+        <h3><a href="pages/work.html">Werkervaring</a></h3>
+        <h3><a href="pages/skills.html">It vaardigheden</a></h3>
+        <h3><a href="pages/github.html">GitHub Projecten</a></h3>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

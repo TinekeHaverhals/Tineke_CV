@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<link rel="STYLESHEET" href="/css.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <title>Tineke Haverhals</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <img src="/images/tineke.png" alt="foto_tineke">
+
+        <p id="underline">Persoonlijke gegevens</p>
+        <p>Adres: Kastanjelaan 9
+            <br> 2560 Kessel</p>
+        <p>GSM: (+32)484090351</p>
+        <p>Rijbewijs: rijbewijs B</p>
+        <p>Geboortedatum: 15/07/1998</p>
+        <p>Geboorteplaats: Wilrijk</p>
+        <p>Nationaliteit : Belg</p>
+
+
+        <a href="https://www.facebook.com/tineke.haverhals/" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/tineke-haverhals-6851821aa/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/tineke_haverhals/" class="fa fa-instagram"></a>
+    </div>
+
+    <div id="style2">
+        <h3> Eigenschappen</h3>
+        <ul>
+            <li>Sociaal </li>
+            <li>Leergierig </li>
+            <li>Enthousiast </li>
+            <li>Goed kunnen organiseren</li>
+            <li>Teamspeler</li>
+            <li>Zelfstandig</li>
+            <li>Punctueel</li>
+        </ul>
+
+        <br>
+        <div class="dropdown">
+            <button id="myBtn" class="dropbtn">Andere pagina's</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="/tineke.html">Home</a>
+                <a href="/pages/language.html">Talen</a>
+                <a href="/pages/skills.html">IT vaardigheden</a>
+                <a href="/pages/study.html">Opleiding</a>
+                <a href="/pages/work.html">Werkervaring</a>
+                <a href="/pages/github.html">GitHub</a>
+
+
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("myBtn").onclick = function () {
+                myFunction()
+            };
+
+
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+        </script>
+
+
+    </div>
+
+</body>
+
+</html>
